@@ -11,7 +11,7 @@ app.get("/", async (req, res) => {
 app.listen(port, async () => {
   try {
     await connection();
-    console.log("start server");
+    console.log(`server listening on ${port}`);
   } catch (error) {
     console.log(error);
   }
